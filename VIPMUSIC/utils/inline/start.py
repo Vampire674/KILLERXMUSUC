@@ -38,18 +38,18 @@ def private_panel(_):
         ],
         [
              InlineKeyboardButton(
-                text="❍ ✰ 𝚳𝛍𝛈֟֠֩፝𝛈ᴧ ✰ ❍",
-                url=f"https://t.me/MUNNA_KING_XD",
+                text="❍ 𝐎ᴡɴᴇʀ ❍",
+                url=f"https://t.me/ll_SARKAR_MERA_BABU_ll",
             ),
             InlineKeyboardButton(
-                text="❍ UPDATE ❍",
-                url=f"https://t.me/Love_dp_Sad_dp",
+                text="❍ 𝐀ʟʟ 𝐁ᴏᴛs ❍",
+                url=f"https://t.me/TG_NAME_STYLE/4368",
             )
         ],
         [
             InlineKeyboardButton(
-                text="❍  𝛅𝛖𝛒֟֠֩፝𝛒𝛐𝛄𝛕  ❍",
-                url=f"https://t.me/+Vr47TRT5Vbw2YjA9",
+                text="❍ 𝐏𝐑𝐎𝐌𝐎𝐓𝐈𝐎𝐍 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄 ❍",
+                url=f"https://t.me/TG_NAME_STYLE/4602",
             ),
         ],
     ]
