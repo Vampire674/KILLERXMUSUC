@@ -1,3 +1,4 @@
+import asyncio
 import random
 
 from pyrogram import filters
@@ -15,6 +16,8 @@ from VIPMUSIC import YouTube, app
 from VIPMUSIC.core.call import VIP as VIP
 from VIPMUSIC.misc import SUDOERS, db
 from VIPMUSIC.utils.database import (
+    get_active_chats,
+    get_lang,
     is_active_chat,
     is_music_playing,
     is_muted,
@@ -64,9 +67,6 @@ async def markup_panel(client, CallbackQuery: CallbackQuery, _):
         )
     except:
         return
-    if chat_id not in wrong:
-        wrong[chat_id] = {}
-    wrong[chat_id][CallbackQuery.message.id] = True
 
 
 @app.on_callback_query(filters.regex("MainMarkup") & ~BANNED_USERS)
@@ -84,9 +84,6 @@ async def del_back_playlists(client, CallbackQuery, _):
         )
     except:
         return
-    if chat_id not in wrong:
-        wrong[chat_id] = {}
-    wrong[chat_id][CallbackQuery.message.id] = True
 
 
 @app.on_callback_query(filters.regex("MusicMarkup") & ~BANNED_USERS)
@@ -104,9 +101,6 @@ async def music_markup(client, CallbackQuery, _):
         )
     except:
         return
-    if chat_id not in wrong:
-        wrong[chat_id] = {}
-    wrong[chat_id][CallbackQuery.message.id] = True
 
 
 @app.on_callback_query(filters.regex("Pages") & ~BANNED_USERS)
@@ -419,7 +413,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             try:
                 await VIP.skip_stream(chat_id, link, video=status, image=image)
             except:
-                return await CallbackQuery.message.reply_text(_["call_7"])
+                return await CallbackQuery.message.reply_text(_["call_6"])
             button = stream_markup2(_, chat_id)
             img = await get_thumb(videoid)
             run = await CallbackQuery.message.reply_photo(
@@ -447,7 +441,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                     video=status,
                 )
             except:
-                return await mystic.edit_text(_["call_7"])
+                return await mystic.edit_text(_["call_6"])
             try:
                 image = await YouTube.thumbnail(videoid, True)
             except:
@@ -455,7 +449,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             try:
                 await VIP.skip_stream(chat_id, file_path, video=status, image=image)
             except:
-                return await mystic.edit_text(_["call_7"])
+                return await mystic.edit_text(_["call_6"])
             button = stream_markup(_, videoid, chat_id)
             img = await get_thumb(videoid)
             run = await CallbackQuery.message.reply_photo(
@@ -476,7 +470,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             try:
                 await VIP.skip_stream(chat_id, videoid, video=status)
             except:
-                return await CallbackQuery.message.reply_text(_["call_7"])
+                return await CallbackQuery.message.reply_text(_["call_6"])
             button = stream_markup2(_, chat_id)
             run = await CallbackQuery.message.reply_photo(
                 photo=STREAM_IMG_URL,
@@ -499,7 +493,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             try:
                 await VIP.skip_stream(chat_id, queued, video=status, image=image)
             except:
-                return await CallbackQuery.message.reply_text(_["call_7"])
+                return await CallbackQuery.message.reply_text(_["call_6"])
             if videoid == "telegram":
                 button = stream_markup2(_, chat_id)
                 run = await CallbackQuery.message.reply_photo(
@@ -603,7 +597,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         await mystic.edit_text(f"{string}\n\nᴄʜᴀɴɢᴇs ᴅᴏɴᴇ ʙʏ : {mention} !")
 
 
-"""async def markup_timers():
+"""async def markup_timerss():
     while not await asyncio.sleep(5):
         active_chats = await get_active_chats()
         for chat_id in active_chats:
@@ -693,7 +687,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 continue
 
 
-asyncio.create_task(markup_timers())"""
+asyncio.create_task(markup_timerss())"""
 
 __MODULE__ = "Adᴍɪɴ"
 __HELP__ = """
