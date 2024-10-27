@@ -71,9 +71,9 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
     elif 90 <= umm < 95:
         bar = "♔—————————♬—♔"
     elif 95 <= umm < 100:
-        bar = "♔——————————♬♔"
+        bar = "♔——————————𝐄𝐍𝐃"
     else:
-        bar = "◉——————————🎺"
+        bar = "𝗠𝐔𝐒𝐈𝐂 𝗠𝐎𝐎𝐃 𝗢𝐍"
     buttons = [
         [
             InlineKeyboardButton(
