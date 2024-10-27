@@ -55,48 +55,31 @@ def stream_markup_timerr(_, videoid, chat_id, played, dur):
 
     # Fun and engaging sentences with progress bar
     if 10 < umm <= 20:
-        bar = "𝐀𝐃𝐃—◉—————————𝐁𝐀𝐁𝐘"
+        bar = "♔—♬—————————♔"
     elif 20 <= umm < 35:
-        bar = "𝐀𝐃𝐃———◉———————𝐁𝐀𝐁𝐘"
+        bar = "♔———♬———————♔"
     elif 35 <= umm < 50:
-        bar = "𝐀𝐃𝐃————◉——————𝐁𝐀𝐁𝐘"
+        bar = "♔————♬——————♔"
     elif 50 <= umm < 75:
-        bar = "𝐀𝐃𝐃—————◉—————𝐁𝐀𝐁𝐘"
+        bar = "♔—————♬—————♔"
     elif 75 <= umm < 80:
-        bar = "𝐀𝐃𝐃——————◉————𝐁𝐀𝐁𝐘"
+        bar = "♔——————♬————♔"
     elif 80 <= umm < 85:
-        bar = "𝐀𝐃𝐃———————◉———𝐁𝐀𝐁𝐘"
+        bar = "♔———————♬———♔"
     elif 85 <= umm < 90:
-        bar = "𝐀𝐃𝐃————————◉——𝐁𝐀𝐁𝐘"
+        bar = "♔————————♬——♔"
     elif 90 <= umm < 95:
-        bar = "𝐀𝐃𝐃—————————◉—𝐁𝐀𝐁𝐘"
+        bar = "♔—————————♬—♔"
     elif 95 <= umm < 100:
-        bar = "𝐀𝐃𝐃——————————◉𝐁𝐀𝐁𝐘"
+        bar = "♔——————————♬♔"
     else:
-        bar = "◉——————————❈𝐄𝐍𝐃❈"
+        bar = "◉——————————🎺"
     buttons = [
         [
             InlineKeyboardButton(
                 text=f"{bar}",
                 url=f"https://t.me/{app.username}?startgroup=true",
             )
-        ],
-        [
-            InlineKeyboardButton(
-                text="❀𝐏𝐋𝐀𝐘𝐋𝐈𝐒𝐓❀", callback_data=f"vip_playlist {videoid}"
-            ),
-            InlineKeyboardButton(
-                text="❀𝐂𝐎𝐍𝐓𝐑𝐎𝐋𝐒❀",
-                callback_data=f"Pages Back|3|{videoid}|{chat_id}",
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="❉𝐕𝐈𝐃𝐄𝐎❉", callback_data=f"downloadvideo {videoid}"
-            ),
-            InlineKeyboardButton(
-                text="❉𝐀𝐔𝐃𝐈𝐎❉", callback_data=f"downloadaudio {videoid}"
-            ),
         ],
         [
             InlineKeyboardButton(
