@@ -1,7 +1,7 @@
  ━━━━━━━━━━━━━━━━━━━━━━━
 <p align="left">
     
-🇮🇳 Radhe
+🇮🇳 KILLER OP
 
 <h3 align="center">
     ─「 ᴅᴇᴩʟᴏʏ ᴏɴ ʜᴇʀᴏᴋᴜ 」─
