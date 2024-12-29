@@ -53,7 +53,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/Jdjdidjrkrjsowjwm/VIP-MUSIC",
+    "https://github.com/Vampire674/KILLERXMUSUC",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
@@ -75,7 +75,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "1808943146").split())
+    map(int, getenv("OWNER_ID", "7840042336").split())
 )  # Input type must be interger
 
 
@@ -96,7 +96,7 @@ HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Jdjdidjrkrjsowjwm/VIP-MUSIC",
+    "https://github.com/Vampire674/KILLERXMUSUC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -117,7 +117,7 @@ SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", "https://t.me/Love_dp_Sad_dp"
 )  # Example:- https://t.me/+Vr47TRT5Vbw2YjA9
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/+j6JwEDLXa_BjOWFl"
+    "SUPPORT_GROUP", "https://t.me/+qeecbptRBC81MjQ9"
 )  # Example:- https://t.me/+Vr47TRT5Vbw2YjA9
 
 SUPPORT_CHAT = getenv(
@@ -144,7 +144,7 @@ TELEGRAM_DOWNLOAD_EDIT_SLEEP = int(getenv("TELEGRAM_EDIT_SLEEP", "5"))
 
 
 # Your Github Repo.. Will be shown on /start Command
-GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Jdjdidjrkrjsowjwm/VIP-MUSIC")
+GITHUB_REPO = getenv("GITHUB_REPO", "https://github.com/Vampire674/KILLERXMUSUC")
 
 
 # Spotify Client.. Get it from https://developer.spotify.com/dashboard
@@ -217,12 +217,12 @@ autoclean = []
 
 START_IMG_URL = getenv(
     "START_IMG_URL",
-    "https://graph.org/file/169995be1d5c2087645df-fd7ea2705a8823facc.jpg",
+    "https://files.catbox.moe/vj7run.jpg",
 )
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
-    "https://graph.org/file/b7130a8281c89e2dae75c-13c1bb55a11e96f85e.jpg",
+    "https://files.catbox.moe/vj7run.jpg",
 )
 
 PLAYLIST_IMG_URL = getenv(
@@ -237,7 +237,7 @@ GLOBAL_IMG_URL = getenv(
 
 STATS_IMG_URL = getenv(
     "STATS_IMG_URL",
-    "https://graph.org/file/b7130a8281c89e2dae75c-13c1bb55a11e96f85e.jpg",
+    "https://files.catbox.moe/vj7run.jpg",
 )
 
 TELEGRAM_AUDIO_URL = getenv(
