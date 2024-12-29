@@ -59,7 +59,7 @@ async def init():
     await userbot.start()
     await VIP.start()
     await VIP.decorators()
-    LOGGER("VIPMUSIC").info("VIPMUSIC STARTED SUCCESSFULLY 🕊️")
+    LOGGER("VIPMUSIC").info("VIPMUSIC STARTED SUCCESSFULLY 🧪")
     await idle()
 
 
